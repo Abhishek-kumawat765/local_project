@@ -47,7 +47,7 @@ var KTSigninGeneral = (function () {
                         var password = $('#password').val();
                         $.ajax({
                              headers: {'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')},
-                    	  url: 'http://localhost/time_aura/login',
+                    	  url: 'http://localhost/local_project/login',
                     	  method : 'post',
                     	  data : {username:username, password:password},
                     	  success: function(response){
@@ -71,7 +71,7 @@ var KTSigninGeneral = (function () {
                                           (t.querySelector('[name="email"]').value = ""),
                                             (t.querySelector('[name="password"]').value =
                                               "");
-                                          var r = 'http://localhost/time_aura';
+                                          var r = 'http://localhost/local_project';
                                           r && (location.href = r);
                                         }
                                       });

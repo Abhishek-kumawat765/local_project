@@ -28,6 +28,30 @@
                 @enderror
             </div>
             <div class="col-md-3">
+                <label for="name">Student Name<span style="color:red;">*</span></label>
+                <input type="text" name="name" id="name" value="{{ old('name') }}" class="form-control p-1"
+                    autocomplete="off" placeholder="Enter your name" />
+                @error('name')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+            <div class="col-md-3">
+                <label for="name">Student Name<span style="color:red;">*</span></label>
+                <input type="text" name="name" id="name" value="{{ old('name') }}" class="form-control p-1"
+                    autocomplete="off" placeholder="Enter your name" />
+                @error('name')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+            <div class="col-md-3">
+                <label for="name">Student Name<span style="color:red;">*</span></label>
+                <input type="text" name="name" id="name" value="{{ old('name') }}" class="form-control p-1"
+                    autocomplete="off" placeholder="Enter your name" />
+                @error('name')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+            <div class="col-md-3">
                 <label for="age">Age<span style="color:red;">*</span></label>
                 <input type="text" name="age" id="age" value="{{ old('age') }}" class="form-control p-1"
                     autocomplete="off" placeholder="Enter your age" />
